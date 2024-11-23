@@ -198,7 +198,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Rodolfo Hernández**
+**Sakthi Harish S a.k.a Retr0**
 - Website: [https://retr0-sec.netlify.app/](https://retr0-sec.netlify.app/)
 - GitHub: [@Retr0-XD](https://github.com/Retr0-XD)
 - Email: retr0secanddev@gmail.com
