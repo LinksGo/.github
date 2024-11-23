@@ -91,8 +91,8 @@ Visit [http://localhost:3000](http://localhost:3000) to see the application.
 ## 📱 Screenshots
 
 <div align="center">
-  <img src="sample.png" alt="Dashboard" width="45%"/>
-  <img src="linksGoLogo.png" alt="Profile" width="45%"/>
+  <img src="sample.png" alt="Dashboard" width="70%"/>
+  <img src="linksGoLogo.png" alt="Profile" width="10%"/>
 </div>
 
 ## 🚀 Deployment
