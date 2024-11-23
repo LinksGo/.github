@@ -56,7 +56,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/linksgo.git
+   git clone https://github.com/Retr0/linksgo.git
    cd linksgo
    ```
 
