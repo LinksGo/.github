@@ -4,7 +4,7 @@
   <img src="1.png" alt="LinksGo Logo" width="200"/>
   <p>Your All-in-One Link Management Platform</p>
   
-  [![Next.js](https://img.shields.io/badge/Next.js-13-black)](https://nextjs.org/)
+  [![Next.js](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
   
@@ -14,16 +14,16 @@
 ## 🌟 Features
 
 - 🔗 **Smart Link Management**
-  - Custom short links
-  - QR code generation
-  - Link analytics
-  - One-time links
+  - Drag-and-drop link reordering
+  - Link analytics and tracking
+  - Custom profile links
+  - Click statistics
 
 - 👤 **User Profiles**
-  - Customizable bio pages
-  - Social media integration
+  - Customizable usernames
   - Profile analytics
   - Custom themes
+  - Social media integration
 
 - 🎨 **Modern UI/UX**
   - Responsive design
@@ -31,15 +31,15 @@
   - Mobile-first approach
   - Smooth animations
 
-- 🚀 **Progressive Web App**
-  - Offline support
-  - Install on devices
-  - Push notifications
-  - Fast performance
+- 📊 **Analytics Dashboard**
+  - Real-time statistics
+  - Click tracking
+  - View rates
+  - Performance metrics
 
 - 🔒 **Security**
-  - OAuth authentication
-  - Rate limiting
+  - Supabase authentication
+  - Secure data storage
   - HTTPS enforced
   - Data encryption
 
@@ -49,8 +49,8 @@
 
 - Node.js 18 or later
 - npm or yarn
-- Google OAuth credentials
-- AWS account (for deployment)
+- Supabase account
+- AWS account (for Amplify deployment)
 
 ### Installation
 
@@ -80,14 +80,13 @@ Visit [http://localhost:3000](http://localhost:3000) to see the application.
 
 ## 🏗️ Tech Stack
 
-- **Framework**: [Next.js 13](https://nextjs.org/)
-- **UI Library**: [NextUI](https://nextui.org/)
+- **Framework**: [Next.js 14](https://nextjs.org/)
+- **UI Components**: [Shadcn/ui](https://ui.shadcn.com/)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Authentication**: [NextAuth.js](https://next-auth.js.org/)
-- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
-- **Database**: [DynamoDB](https://aws.amazon.com/dynamodb/)
-- **Storage**: [AWS S3](https://aws.amazon.com/s3/)
-- **Deployment**: [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/)
+- **Authentication**: [Supabase Auth](https://supabase.com/auth)
+- **Database**: [Supabase](https://supabase.com/)
+- **Drag & Drop**: [@dnd-kit/core](https://dndkit.com/)
+- **Deployment**: [AWS Amplify](https://aws.amazon.com/amplify/)
 
 ## 📱 Screenshots
 
@@ -98,14 +97,12 @@ Visit [http://localhost:3000](http://localhost:3000) to see the application.
 
 ## 🚀 Deployment
 
-LinksGo can be deployed to various platforms. We recommend AWS Elastic Beanstalk for production:
+LinksGo is deployed using AWS Amplify:
 
-1. Set up AWS credentials
-2. Configure environment variables
-3. Run deployment command:
-   ```bash
-   npm run deploy:aws
-   ```
+1. Set up AWS Amplify CLI
+2. Configure environment variables in Amplify Console
+3. Connect your GitHub repository
+4. Deploy with a single click
 
 Detailed deployment instructions are available in [DEPLOYMENT.md](DEPLOYMENT.md).
 
@@ -131,13 +128,10 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 Required environment variables:
 
 ```env
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
 NEXT_PUBLIC_APP_URL=your-app-url
-NEXTAUTH_URL=your-app-url
-NEXTAUTH_SECRET=your-secret
-GOOGLE_CLIENT_ID=your-google-client-id
-GOOGLE_CLIENT_SECRET=your-google-client-secret
-AWS_ACCESS_KEY_ID=your-aws-key
-AWS_SECRET_ACCESS_KEY=your-aws-secret
+NEXT_PUBLIC_APP_DOMAIN=your-app-domain
 ```
 
 ## 📊 Project Structure
@@ -145,14 +139,14 @@ AWS_SECRET_ACCESS_KEY=your-aws-secret
 ```
 linksgo/
 ├── src/
-│   ├── app/           # Next.js 13 app directory
+│   ├── app/           # Next.js 14 app directory
 │   ├── components/    # React components
+│   │   ├── ui/       # Shadcn UI components
+│   │   └── ...       # Custom components
 │   ├── lib/          # Utility functions
-│   ├── hooks/        # Custom React hooks
 │   └── styles/       # Global styles
 ├── public/           # Static assets
-├── .platform/        # AWS configuration
-└── scripts/         # Utility scripts
+└── migrations/      # Database migrations
 ```
 
 ## 🧪 Testing
@@ -167,30 +161,21 @@ npm run test:ci     # Run all tests
 
 ## 📈 Analytics
 
-LinksGo provides comprehensive analytics:
+LinksGo provides essential analytics:
 
 - Link click tracking
-- Visitor demographics
-- Device statistics
-- Conversion rates
-- Custom events
+- View rates
+- Total views
+- Active links tracking
+- Performance metrics
 
 ## 🔒 Security
 
-- OAuth 2.0 authentication
+- Supabase authentication
 - HTTPS enforcement
-- Rate limiting
+- Secure data storage
+- Regular security updates
 - Data encryption
-- Regular security audits
-- Compliance with GDPR
-
-## 📱 PWA Features
-
-- Offline support
-- Push notifications
-- Home screen installation
-- Background sync
-- Fast performance
 
 ## 🌐 Browser Support
 
@@ -201,11 +186,11 @@ LinksGo provides comprehensive analytics:
 
 ## 🎯 Roadmap
 
-- [ ] Advanced analytics dashboard
+- [ ] Enhanced analytics dashboard
 - [ ] Custom domain support
 - [ ] Team collaboration
 - [ ] API access
-- [ ] Enhanced security features
+- [ ] Additional themes
 
 ## 📄 License
 
@@ -222,7 +207,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [Next.js Team](https://nextjs.org/)
 - [Vercel](https://vercel.com/)
-- [NextUI Team](https://nextui.org/)
+- [Supabase Team](https://supabase.com/)
 - [Open Source Community](https://opensource.org/)
 
 ---
