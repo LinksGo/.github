@@ -108,13 +108,13 @@ Detailed deployment instructions are available in [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details. For all contributions, please use the `contribution` branch.
 
 1. Fork the repository
-2. Create your feature branch
+2. Create your feature branch from `contribution`
 3. Commit your changes
 4. Push to the branch
-5. Open a Pull Request
+5. Open a Pull Request to merge into `contribution`
 
 ## 📝 Documentation
 
@@ -198,7 +198,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Sakthi Harish a.k.a Retr0**
+**Rodolfo Hernández**
 - Website: [https://retr0-sec.netlify.app/](https://retr0-sec.netlify.app/)
 - GitHub: [@Retr0-XD](https://github.com/Retr0-XD)
 - Email: retr0secanddev@gmail.com
