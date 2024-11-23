@@ -93,7 +93,7 @@ Visit [http://localhost:3000](http://localhost:3000) to see the application.
 
 <div align="center">
   <img src="sample.png" alt="Dashboard" width="45%"/>
-  <img src="LinksGo(2).png" alt="Profile" width="45%"/>
+  <img src="LinksGo (2).png" alt="Profile" width="45%"/>
 </div>
 
 ## 🚀 Deployment
